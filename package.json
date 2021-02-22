@@ -4,13 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeders/seed.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jordanks93/Workout-Tracker.git"
   },
-  "author": "Jordan  Stuckman",
+  "author": "Jordan Stuckman",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jordanks93/Workout-Tracker/issues"
