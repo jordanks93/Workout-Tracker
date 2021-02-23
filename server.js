@@ -8,13 +8,12 @@ const PORT = process.env.PORT || 3000;
 
 // Setup Express server
 const app = express();
-
-// Enable morgan log
-app.use(logger("dev"));
-
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static("public"));
+
+// Enable morgan log
+app.use(logger("dev"));
 
 // Mongo DB connection
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
