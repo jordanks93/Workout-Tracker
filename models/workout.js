@@ -6,13 +6,11 @@ const Schema = mongoose.Schema;
 const workoutSchema = new Schema({
   day: {
     type: Number,
-    default: new Date(),
+    default: Date.now,
   },
   exercises: Array,
-  }, {
-  versionKey: false,
-});
-
+  });
+  
 const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = Workout;
