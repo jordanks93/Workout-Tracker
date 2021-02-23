@@ -1,3 +1,4 @@
+// Workout schema model
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
@@ -8,7 +9,7 @@ const workoutSchema = new Schema({
     default: new Date(),
   },
   exercises: Array,
-}, {
+  }, {
   versionKey: false,
 });
 
